@@ -1,0 +1,151 @@
+
+
+/* Custom Style */
+body {
+    overflow-x: hidden;
+}
+.offcanvas {
+    --bs-offcanvas-height: 50vh;
+}
+/* Style for the scroll-to-top button */
+.scrollToTop {
+    padding: 10px;
+    color: rgb(3, 3, 3);
+    position: fixed;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+.small-logo {
+    width: 90px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.btn-circle {
+    border-radius: 250%;
+    margin-right: 10px;
+}
+.owl-item.active.center h5, .owl-item.active.center span {
+    color: #000;
+}
+@media screen and (max-width: 1023px) {
+    #myCarousel .carousel-item img {
+        height: auto !important;
+    }
+    .social-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .social-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 8px;
+        z-index: 1;
+    }
+    
+    .social-content a {
+        display: block;
+        margin-bottom: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    #socialToggleBtn {
+        transition: background-color 0.3s;
+    }
+    
+    .show {
+        display: block;
+    } 
+    
+}    
+
+    .fabs {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    .action {
+        background: rgb(255, 0, 128);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        box-shadow: 0 5px 7px 0px gray;
+        transition: background-color 0.4s ease-in-out;
+    }
+    
+    .action i {
+        position: absolute;
+        color: white;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .action:hover {
+        background-color: rgb(255, 103, 179);
+    }
+    
+    .btn1 {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+    
+    .btn1 i {
+        position: absolute;
+        font-size: 18px;
+        color: white;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .btns {
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 5px;
+        height: 35px;
+        width: 35px;
+        transition: 0.3s ease-in-out;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    
+    .btns.open {
+        bottom: 50px;
+    }
+       /* Add custom colors for social media icons */
+.whatsapp-color {
+    color: #25D366; /* WhatsApp green color */
+}
+
+.facebook-color {
+    color: #3b5999; /* Facebook blue color */
+}
+
+.instagram-color {
+    color: #e4405f; /* Instagram pink color */
+}
+
+.tiktok-color {
+    color: black; /* TikTok black color */
+}
+
+.linkedin-color {
+    color: #0077b5; /* LinkedIn blue color */
+}
