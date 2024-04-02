@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Home</title>
+    <title>Mekki</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -17,15 +17,57 @@
     <link rel="stylesheet" href="assets/css/lightgallery.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-VrZHRv2AK5CkdU4r2n3mZJLKkP8J8hKbMpJx8DIk8fF+weS+IBmOV5B4Gauj7jQ2" crossorigin="anonymous">
+
+    <style>
+        /* Override Bootstrap styles for Specials Section */
+        #specials {
+            background-color: #4d4948; /* Dark background color */
+            color: #fff; /* White text color */
+            padding: 80px 0; /* Adjust padding as needed */
+        }
+
+        #specials .nav-link {
+            color: #fff; /* White text color for tab links */
+        }
+
+        #specials .nav-link.active {
+            color: #343a40; /* Active tab color */
+        }
+
+        #specials .tab-content {
+            background-color: #4d4948; /* Dark background color for tab content */
+            color: #fff; /* White text color for tab content */
+            padding: 20px; /* Adjust padding as needed */
+        }
+        @media screen and (max-width: 768px) {
+        .nav-link {
+            font-size: 3vw; /* Adjust the font size as needed */
+        }
+        .carousel-item .container > div {
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+        
+    </style>
 </head>
 
 <body>
     <!-- Header Block Start -->
     <header id="site-header">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
+            <div class="container" >
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.png" alt="Your Logo" class="img-fluid" style="width: 50px; height: 50px;">
+                    <img src="assets/img/logo.png" alt="Your Logo" class="img-fluid" style="width: 132px; height: 55px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,44 +80,35 @@
                             <a class="nav-link " aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="about.html">About</a>
+                            <a class="nav-link " aria-current="page" href="index.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item " href="404.html">404 Page</a></li>
-                                <li><a class="dropdown-item " href="page.html">Common Page</a></li>
-                                <li><a class="dropdown-item " href="faqs.html">FAQ Page</a></li>
-                                <li><a class="dropdown-item " href="hero.html">Hero Page</a></li>
-                                <li><a class="dropdown-item " href="single.html">Single Page</a></li>
-                                <li><a class="dropdown-item " href="works.html">Work Page</a></li>
-                            </ul>
+                            <a class="nav-link scrollToSection" href="#Our_Story" >Our Story</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="blog.html">Blog</a>
+                            <a class="nav-link scrollToSection" href="#services">Our Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link scrollToSection" href="#clients">Our Clients</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link scrollToSection" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                     <div class="d-flex">
-                        <a href="https://wa.me/+971504686051" target="_blank" 
+                        <a href="https://wa.me/+971509447666" target="_blank" 
                         class=" btn-lg btn-circle">
                         <i class="fab fa-whatsapp" style="color: green;"></i>
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank"
+                        <a href="https://www.facebook.com/GateToSuccess1/" target="_blank"
                         class=" btn-lg btn-circle">
                         <i class="fab fa-facebook-f" style="color: blue;"></i>
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank"
+                        <a href="https://www.instagram.com/royalgateuae/" target="_blank"
                         class=" btn-lg btn-circle">
                         <i class="fab fa-instagram" style="color: #e4405f;"></i>
                         </a>
-                        <a href="https://www.tiktok.com/" target="_blank"
+                        <a href="https://www.tiktok.com/royalgateuae/" target="_blank"
                         class=" btn-lg social-btn">
                         <i class="fab fa-tiktok" style="color: black;"></i>
                         </a>
@@ -83,38 +116,7 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Add this script for the toggle functionality -->
-        <div class="fabs" onclick="toggleBtn()">
-            <div class="action">
-                <i class="fas fa-plus" id="add"></i>
-                <i class="fas fa-times" id="remove" style="display: none"></i>
-            </div>
-
-            <div class="btns">
-                <a href="https://wa.me/+971504686051" class="btn1" style="background: #25D366">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://www.facebook.com/" class="btn1" style="background: #3b5999">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/" class="btn1" style="background: #e4405f">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/" class="btn1" style="background: black">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-            </div>
-        </div>
-        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-            <div class="container py-5">
-                <h2 class="fw-bold pb-2">Search here</h2>
-                <form class="position-relative" action="#" method="post">
-                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Examples: posts, services,..">
-                    <button class="position-absolute top-0 end-0 border-0 bg-transparent py-2 pe-2 text-secondary" type="submit" name="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-        </div>
+      
     </header>
     <main>
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -122,336 +124,521 @@
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="bd-placeholder-img w-100 vh-100" src="assets/img/carousel-1.jpg">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h2 class="display-4 fw-bold">company Name</h2>
-                            <p class="fs-5">welcomes you to a realm of unparalleled excellence.</p>
-                     </div>
+                    <img class="bd-placeholder-img w-100 vh-100" src="assets/img/carousel-7.jpg">
+                    <div style="position: absolute; top: 80%; left: 50%; transform: translateX(-50%);">
+                        <p class="nav-link" style="color: #2b3b92; font-weight: bold; font-size: 24px; white-space: nowrap;">We Build Your Money</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item ">
                     <img class="bd-placeholder-img w-100 vh-100" src="assets/img/carousel-2.jpg">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h2 class="display-4 fw-bold">company Name</h2>
-                            <p class="fs-5">welcomes you to a realm of unparalleled excellence.</p>
-                       </div>
+                    <div style="position: absolute; top: 80%; left: 50%; transform: translateX(-50%);">
+                        <p class="nav-link" style="color: #2b3b92; font-weight: bold; font-size: 24px; white-space: nowrap;">We Build Your Money</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="bd-placeholder-img w-100 vh-100" src="assets/img/carousel-3.jpg">
+                    <div style="position: absolute; top: 80%; left: 50%; transform: translateX(-50%);">
+                        <!-- <p class="nav-link" style="color: #2b3b92; font-weight: bold; font-size: 22px; white-space: nowrap;">We Build Your Money</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img w-100 vh-100" src="assets/img/carousel-4.jpg">
                     <div class="container">
-                        <div class="carousel-caption">
-                            <h2 class="display-4 fw-bold">company Name</h2>
-                            <p class="fs-5">welcomes you to a realm of unparalleled excellence.</p>
-                     </div>
+                        <div style="position: absolute; top: 80%; left: 50%; transform: translateX(-50%);">
+                            <p class="nav-link" style="color: #2b3b92; font-weight: bold; font-size: 24px; white-space: nowrap;">We Build Your Money</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+   
+         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
         </div>
-        <section id="section-2">
+        <section id="Our_Story"class="Our_Story">
             <div class="py-5">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="fw-bold pb-2">About us</h2>
-                            <p>Welcome to [Your Company Name], your trusted partner in financial excellence. With a commitment to precision, integrity, and personalized service, we are your go-to destination for all your accounting needs.</p>
-
-                            <ul class="list-unstyled">
-                                <li><i class="fa-regular fa-square-check pe-1"></i> Expert Team.</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i> words.</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i>  Relations.</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i> words..</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i> words..</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i> words..</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i> words.</li>
-                                <li><i class="fa-regular fa-square-check pe-1"></i> words.</li>
-                            </ul>
-                            <p>E your trusted partner in the region's top services.</p>
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="aos-item__inner">
+                                    <img title="" class="rounded w-70" src="assets/img/about5.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
-                                <div class="aos-item__inner">
-                                    <img title="" class="rounded w-100" src="assets/img/about.jpg" alt="">
-                                    <div class="caption">
-                                        <figcaption class="figure-caption py-2">A caption for the above image.</figcaption>
-                                    </div>
-                                </div>
-                            </div>
+                          <br>  <!-- <h2 class="fw-bold pb-2">Our Story</h2> -->
+                            <p class="bx bxs-quote-alt-left quote-icon-left">Our story embodies a steadfast commitment to excellence and expertise. With over 15 years of invaluable experience in the UAE accountant and VAT services, we've cultivated deep insights into the nuanced requirements and preferences of our clients. This profound understanding has empowered us to curate unique, top-tier brands that effectively address these needs.<br>
+                                Driven by a passion for our craft, we've assembled a team of professionals who share a common vision to establish a company that redefines standards and delivers unparalleled services. Our collective expertise fuels our mission to surpass customer expectations at every turn.<br>
+                                Our narrative is one of continual growth, resilience, and a relentless pursuit of excellence. As we forge ahead, our foundation remains rooted in trust, innovation, and unwavering dedication to customer satisfaction. Join us in shaping a future where your financial goals are not just met but exceeded.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section-3">
-            <div class="bg-light py-5">
+        
+        <!-- ======= Specials Section ======= -->
+    <!-- <section id="specials" class="specials">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+<p></p>
+          </div>
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Passion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Energy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Professionalism</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <p class="fst-italic">We are driven by a deep passion for healthcare and a commitment to making a difference in our communities. Our passion fuels our dedication to delivering exceptional care and pursuing excellence in all that we do.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/passion.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <p class="fst-italic">We approach our work with enthusiasm, vitality, and a positive attitude. Our energy inspires and motivates others, fosters collaboration, and drives innovation to improve healthcare outcomes and experiences.
+                    </p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/energy.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <p class="fst-italic">We uphold the highest standards of professionalism in all aspects of our work. We demonstrate integrity, ethics, and respect in our interactions with patients, colleagues, and stakeholders. Our professionalism ensures trust, credibility, and accountability in everything we do.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/professionalism.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section> -->
+      <!-- End Specials Section -->
+
+        <section id="services"class="services">
+            <div class="py-5">
+                
                 <div class="container py-5">
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            <h2 class="pb-4 fw-bold">Top Projects</h2>
-                        </div>
-                        <div><a class="btn btn-outline-dark" href="">View All</a></div>
-                    </div>
-                    <div id="lightgallery" class="lightgallery row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 g-4">
-                        <a class="text-decoration-none link-secondary" href="assets/img/Project-1.jpg" data-sub-html=".caption">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br><br><br>
                             <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
-                                <div class="aos-item__inner">
-                                    <img src="assets/img/Project-1.jpg" class="img-fluid w-100">
-                                    <div class="caption">
-                                        <h3 class="text-center p-2 h5">Ramhan.</h3>
-                                    </div>
+                           <div class="aos-item__inner">
+                            <img title="" class="rounded w-100" src="assets/img/about1.jpg" alt="">
                                 </div>
                             </div>
-                        </a>
-                        <a class="text-decoration-none link-secondary" href="assets/img/Project-2.jpg" data-sub-html=".caption">
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
-                                <div class="aos-item__inner">
-                                    <img src="assets/img/work-2.jpg" class="img-fluid w-100">
-                                    <div class="caption">
-                                        <h3 class="text-center p-2 h5">Sama Yas.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="text-decoration-none link-secondary" href="assets/img/Project-3.jpg" data-sub-html=".caption">
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="600">
-                                <div class="aos-item__inner">
-                                    <img src="assets/img/work-3.jpg" class="img-fluid w-100">
-                                    <div class="caption">
-                                        <h3 class="text-center p-2 h5">Yas Park View.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="fw-bold pb-2">VAT Consultancy Services</h2>
+
+                            <ul class="list-unstyled">
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Vat registration:</li>
+                                <p> Simplifying the process of VAT registration to ensure compliance with regulatory standards.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Assistance in:</li>
+                                <p> &#10004;Establishing VAT charging systems<br> &#10004;Filing and preparing quarterly VAT returns<br>&#10004;Maintenance of VAT records</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Vat profile updates:</li>
+                                <p>Keeping your VAT profiles updated with the latest regulatory changes and requirements.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Guidance on tax regulations</li>
+                                <p>Providing comprehensive guidance on VAT regulations to ensure adherence and minimize risks.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>VAT implementation, support,consulting, assessment:</li>
+                                <p>Customized strategies for seamless VAT integration with ongoing expert consultation.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>VAT Assessment & Consulting:</li>
+                                <p>Thorough evaluation of VAT practices with tailored guidance for optimization.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Quarterly Tax Filing & Returns:</li>
+                                <p>Timely and accurate preparation and submission of quarterly tax filings.</p>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="section-5">
-            <div id="section-5-start"></div>
             <div class="py-5">
                 <div class="container py-5">
-                    <h2 class="pb-4 fw-bold">Best services</h2>
-                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-xl-4 g-4">
-                        <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="aos-item__inner d-block bg-light p-4 text-center rounded">
-                                <i class="fa-solid fa-handshake-angle display-4 p-2 mb-2"></i>
-                                <h4 class="pt-2">Landlord Relations</h4>
-                                <p>we have Listing Dedicated teams for landlord relations in various Abu Dhabi areas, fostering strong and lasting partnerships.</p>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="fw-bold pb-2">Accounting services</h2>
+                            <ul class="list-unstyled">
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Bookkeeping and Accounting:</li>
+                                <p>Expert management of financial records and transactions for accurate reporting.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Systems Implementation:</li>
+                                <p>Customized implementation of efficient accounting systems tailored to your business needs.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Monthly Book Maintenance:</li>
+                                <p>Meticulous upkeep of monthly books to ensure accuracy and compliance.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Financial Statement Reporting:</li>
+                                <p>Timely generation and analysis of monthly financial statements for informed decision-making.</p>
+                                <li style="font-size: larger; font-weight: bold;"><i class="fa-regular fa-square-check pe-1"></i>Reconciliation Services:</li>
+                                <p>Thorough reconciliation of bank statements and ledgers to maintain financial accuracy and integrity.</p>
+                                </ul>
                         </div>
-                        <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
-                            <div class="aos-item__inner d-block bg-light p-4 text-center rounded">
-                                <i class="fa-solid fa-gear display-4 p-2 mb-2"></i>
-                                <h4 class="pt-2">High-End Projects</h4>
-                                <p>company Name  oversees premier projects , and more.</p>
+                        <div class="col-md-6">
+                            <br> <br> <br>
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                           <div class="aos-item__inner">
+                            <img title="" class="rounded w-100" src="assets/img/about2.jpg" alt="">
+                                  
+                                </div>
                             </div>
-                        </div>
-                        <div class="aos-item" data-aos="fade-up" data-aos-delay="600">
-                            <div class="aos-item__inner d-block bg-light p-4 text-center rounded">
-                                <i class="fa-solid fa-cubes display-4 p-2 mb-2"></i>
-                                <h4 class="pt-2"> consulting</h4>
-                                <p>Our workforce comprises 75+ dedicated professionals, each contributing their expertise to elevate our services.</p>
-                            </div>
-                        </div>
-                        <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
-                            <div class="aos-item__inner d-block bg-light p-4 text-center rounded">
-                                <i class="fa-solid fa-truck display-4 p-2 mb-2"></i>
-                                <h4 class="pt-2"></h4>
-                                <p>We cover words .....</p>
-                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section>
+   <!-- ======= Testimonials Section ======= -->
+   <section id="testimonials" class="testimonials">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+                <h3>OUR PARTNER</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Small and Medium-sized Enterprises (SMEs) 
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                <div class="col-md-6 col-xl-3 col-sm-12 text-center mx-auto">
+                <br>
+                        <button onclick="openEmailClient()" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                        <!-- Hidden anchor element for opening email client -->
+                        <a id="emailAnchor" style="display:none;"></a>
+                </div>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+                <h3>Our Partner</h3>
+
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                GStartups Companies.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                <div class="col-md-6 col-xl-3 col-sm-12 text-center mx-auto">
+                <br>
+                    <!-- <form action="mailto:info@ad-ss.com" method="post" enctype="text/plain">
+                        <button type="submit" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                    </form> -->
+                    <button onclick="openEmailClient()" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                        <!-- Hidden anchor element for opening email client -->
+                        <a id="emailAnchor" style="display:none;"></a>
+                </div>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+                <h3>Our Partner</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Individuals Customer. 
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                <div class="col-md-6 col-xl-3 col-sm-12 text-center mx-auto">
+                <br>
+                    <!-- <form action="mailto:info@ad-ss.com" method="post" enctype="text/plain">
+                        <button type="submit" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                    </form> -->
+                    <button onclick="openEmailClient()" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                        <!-- Hidden anchor element for opening email client -->
+                        <a id="emailAnchor" style="display:none;"></a>
+                </div>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+                <h3>Our Partner</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Legal and Financial Professionals. 
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                <div class="col-md-6 col-xl-3 col-sm-12 text-center mx-auto">
+                <br>
+                    <!-- <form action="mailto:info@ad-ss.com" method="post" enctype="text/plain">
+                        <button type="submit" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                    </form> -->
+                    <button onclick="openEmailClient()" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                        <!-- Hidden anchor element for opening email client -->
+                        <a id="emailAnchor" style="display:none;"></a>
+                </div>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+                <h3>Our Partner</h3>
+
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Industry Associations and Chambers of Commerce
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                <div class="col-md-6 col-xl-3 col-sm-12 text-center mx-auto">
+                <br>
+                <!-- <form action="mailto:info@ad-ss.com" method="post" enctype="text/plain">
+                    <button type="submit" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                </form> -->
+                <button onclick="openEmailClient()" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                        <!-- Hidden anchor element for opening email client -->
+                        <a id="emailAnchor" style="display:none;"></a>
+                </div>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+                <h3>Our Partner</h3>
+
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Real Estate Companies.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                <div class="col-md-6 col-xl-3 col-sm-12 text-center mx-auto">
+                <br>
+                    <button onclick="openEmailClient()" class="w-100 btn btn-outline-secondary">Click to check your inquiry</button>
+                        <!-- Hidden anchor element for opening email client -->
+                        <a id="emailAnchor" style="display:none;"></a>
+                </div>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
+        <section id="clients" class="clients">
             <div class="bg-light py-5">
                 <div class="container py-5">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <h2 class="pb-4 fw-bold">our partners</h2>
+                            <h2 class="pb-4 fw-bold">Our Clients</h2>
                         </div>
-                        <div><a class="btn btn-outline-dark" href="">View All</a></div>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-6 col-xl-3 col-sm-12">
                             <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
                                 <div class="card aos-item__inner border-0 shadow-sm">
-                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""></a>
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""style="width: 125px; height: 150px;"></a>
                                     <div class="card-body">
-                                        <h4><a href="#" class="link-dark text-decoration-none">How to create a responsive website?</a></h4>
-                                        <div class="mb-1 text-muted"><small>Nov 12, by John</small></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-3 col-sm-12">
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
-                                <div class="card border-0 shadow-sm">
-                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-2.jpg" alt=""></a>
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-2.jpg" alt=""style="width: 125px; height: 150px;"></a>
                                     <div class="card-body">
-                                        <h4><a href="#" class="link-dark text-decoration-none">How to hire right wordpress developer?</a></h4>
-                                        <div class="mb-1 text-muted"><small>Apr 02, by Peter</small></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-3 col-sm-12">
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="600">
-                                <div class="card border-0 shadow-sm">
-                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-3.jpg" alt=""></a>
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""style="width: 125px; height: 150px;"></a>
                                     <div class="card-body">
-                                        <h4><a href="#" class="link-dark text-decoration-none">How to upload content in wordpress site?</a></h4>
-                                        <div class="mb-1 text-muted"><small>Dec 15, by Williams</small></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-3 col-sm-12">
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
-                                <div class="card border-0 shadow-sm">
-                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-4.jpg" alt=""></a>
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-2.jpg" alt=""style="width: 125px; height: 150px;"></a>
                                     <div class="card-body">
-                                        <h4><a href="#" class="link-dark text-decoration-none">Why my website not visible in Google search</a></h4>
-                                        <div class="mb-1 text-muted"><small>Jan 29, by Charlotte</small></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <section>
-            <div class="py-5">
-                <div class="container py-5">
-                    <h2 class="fw-bold pb-4">Contact us</h2>
-                    <div class="row g-5">
-                        <div class="col-xl-6">
-                            <div class="row row-cols-md-2 g-4">
-                                <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="aos-item__inner">
-                                        <div class="bg-light d-block p-3 rounded">
-                                            <div class="d-flex justify-content-start">
-                                                <i class="fa-solid fa-envelope h3 pe-2"></i>
-                                                <span class="h5">Email</span>
-                                            </div>
-                                            <span>INFI@CompanyName.COM</span>
-                                        </div>
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
                                     </div>
-                                </div>
-                                <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="aos-item__inner">
-                                        <div class="bg-light d-block p-3 rounded">
-                                            <div class="d-flex justify-content-start">
-                                                <i class="fa-solid fa-phone h3 pe-2"></i>
-                                                <span class="h5">Phone</span>
-                                            </div>
-                                            <span>+971 50 4686051</span>
-                                        </BR>
-                                            <span>+971 50 468 6051</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
-                                <div class="aos-item__inner">
-                                    <div class="bg-light d-block p-3 rounded">
-                                        <div class="d-flex justify-content-start">
-                                            <i class="fa-solid fa-location-pin h3 pe-2"></i>
-                                            <span class="h5">Office location</span>
-                                        </div>
-                                        <!-- <span>#007, Street name, Bigtown BG23 4YZ, England</span> -->
-                                        <span> Abu Dhabi , Al Najda st, </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
-                                <div class="mt-4 w-100 aos-item__inner">
-                                    <iframe class="rounded" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.189295001352!2d54.372543!3d24.487897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s24%C2%B029'16.4%22N%2054%C2%B022'21.2%22E!5e0!3m2!1sen!2sus!4v1643495206941!5m2!1sen!2sus"></iframe>
-
-                                    <!-- <iframe class="rounded" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe> -->
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6">
-                            <h2 class="pb-4">Leave a meaage</h2>
-                            <div class="row g-4">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">NAME</label>
-                                    <input type="email" class="form-control" placeholder="your name">
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-2.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
+                                    </div>
                                 </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                <input type="email" class="form-control" placeholder="name@example.com">
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                                <input type="tel" class="form-control" placeholder="+1234567890">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Country</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option value="1">UAE</option>
-                                    <option value="2">Non UAE</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-outline-dark">Send Message</button>
                         </div>
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-2.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-2.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 col-sm-12">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="card aos-item__inner border-0 shadow-sm">
+                                    <a href="#" class="link-dark text-decoration-none"><img title="" class="card-img-top w-100" src="assets/img/blog-1.jpg" alt=""style="width: 125px; height: 150px;"></a>
+                                    <div class="card-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="contact">
+            <div class="py-5">
+                <div class="container py-5">
+                    <h2 class="fw-bold pb-4">Contact us</h2>
+                    <div class="row g-5">
+                        <!-- Contact Information -->
+                        <div class="col-xl-6">
+                            <div class="row row-cols-md-2 g-4">
+                                <!-- Email -->
+                                <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="aos-item__inner">
+                                        <div class="bg-light d-block p-3 rounded">
+                                            <div class="d-flex justify-content-start">
+                                                <!-- Email Icon -->
+                                                <i class="fa-solid fa-envelope h3 pe-2"></i>
+                                                <span class="h5">Email</span>
+                                            </div>
+                                            <span>info@mekki.ae</span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Phone -->
+                                <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="aos-item__inner">
+                                        <div class="bg-light d-block p-3 rounded">
+                                            <div class="d-flex justify-content-start">
+                                                <!-- Phone Icon -->
+                                                <i class="fa-solid fa-phone h3 pe-2"></i>
+                                                <span class="h5">Phone</span>
+                                            </div>
+                                            <span>+971 50 944 7666</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Office Location -->
+                                <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="aos-item__inner">
+                                        <div class="bg-light d-block p-3 rounded">
+                                            <div class="d-flex justify-content-start">
+                                                <!-- Location Icon -->
+                                                <i class="fa-solid fa-location-dot h3 pe-2"></i>
+                                                <span class="h5">Office location</span>
+                                            </div>
+                                            <span>Vision Twin Towers - Najda Street - Al Danah - Zone 1 - Abu Dhabi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Map -->
+                        <div class="col-xl-6">
+                            <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
+                                <div class="mt-4 w-100 aos-item__inner">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.6523518971805!2d54.37373306506396!3d24.488591016168062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e664364a3461f%3A0x9a9bd861190d1c6e!2s3%20Al%20Satr%20St%20-%20Al%20Danah%20-%20Zone%201%20-%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1708450692676!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <div class="fabs" onclick="toggleBtn()">
+
+            <div class="btns">
+                <a href="https://wa.me/+971509447666" class="btn1" style="background: #25D366">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
     </main>
+    
     <!-- Footer Block Start -->
     <footer id="site-footer">
         <div class="bg-light py-5">
+           
+                </div>
+            </div> 
+        </div>
+        <div class="bg-dark py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-xl-3 col-sm-12">
-                        <h5 class="pb-3"><i class="fa-solid fa-user-group pe-1"></i> About us</h5>
-                        <span class="text-secondary">Discover the essence of company Name .</span>
-                    </div>
-                    <div class="col-md-6 col-xl-3 col-sm-12">
-                        <h5 class="pb-3"><i class="fa-solid fa-link pe-1"></i> Important links</h5>
-                        <ul>
-                            <li><a href="#" class="text-decoration-none link-secondary">About us</a></li>
-                            <li><a href="#" class="text-decoration-none link-secondary">Privacy policy</a></li>
-                            <li><a href="#" class="text-decoration-none link-secondary">Terms of services</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-xl-3 col-sm-12">
-                        <h5 class="pb-3"><i class="fa-solid fa-location-dot pe-1"></i> Our location</h5>
-                        <span class="text-secondary">
-                            Suite # 000, 7th Floor <br>
-                            Al Massoud Building<br>
-                            Najda Street - Abu Dhabi - UAE<br>
-                        </span>
-                    </div>
-                    <div class="col-md-6 col-xl-3 col-sm-12">
-                        <h5 class="pb-3"><i class="fa-solid fa-paper-plane pe-1"></i> Stay updated</h5>
-                        <form>
-                            <input type="text" class="w-100 mb-2 form-control" name="" placeholder="Email ID">
-                            <button class="w-100 btn btn-dark">Subscribe now</button>
-                        </form>
+                    <div class="col-md-6 col-sm-12">
+                      
                     </div>
                 </div>
             </div>
@@ -461,20 +648,11 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
                         <ul class="list-inline mb-0">
-                            <!-- <li class="list-inline-item"><a class="btn btn-outline-secondary" href="https://wa.me/+971504686051"><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
-                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="https://www.linkedin.com/company/"><i class="fa-brands fa-linkedin-in"></i></a></li>-->
-                            <li class="list-inline-item"><a class="btn-outline-secondary whatsapp-color" href="https://wa.me/+971504686051"><i class="fa-brands fa-whatsapp"></i></a></li>
-                            <li class="list-inline-item"><a class="btn-outline-secondary facebook-color" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a class="btn-outline-secondary instagram-color" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a class="btn-outline-secondary tiktok-color" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
-                            <li class="list-inline-item"><a class="btn-outline-secondary linkedin-color" href="https://www.linkedin.com/company/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            
-                      
-                        
-                        </ul> 
+                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a class="btn btn-outline-secondary" href="linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
                     </div>
                     <div class="col-md-6 col-sm-12"><span class="text-secondary pt-1 float-md-end float-sm-start">Copyright &copy; 2024</span></div>
                 </div>
@@ -489,7 +667,7 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/lightgallery.min.js"></script>
-    <!-- Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-RVSIaIxX8n6Q7oSnGOkXH5BuzyJQ5cfbDrHIHfvMGbY6vE6aCI9jp+qpzvgsitN/" crossorigin="anonymous"></script>
     <script src="assets/js/custom.js"></script>
     <script type="text/javascript">
     /* Add class to navbar */
@@ -537,6 +715,58 @@
             }
         }
     </script>
+ <!-- Vendor JS Files -->
+ <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+ <script src="assets/vendor/aos/aos.js"></script>
+ <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="assets/vendor/php-email-form/validate.js"></script>
+ <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="assets/js/main.js"></script>
+
+
+     <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+<script>
+    function openEmailClient() {
+        // Define the email address
+        var emailAddress = "info@mekki.ae";
+        // Define the email body
+        var emailBody = "";
+        // Construct the email subject
+        var emailSubject = "";
+        // Construct the mailto URL with the email address, subject, and body
+        var mailtoURL = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(emailSubject) + "&body=" + encodeURIComponent(emailBody);
+        
+        // Create a temporary link element
+        var tempLink = document.createElement("a");
+        tempLink.setAttribute("href", mailtoURL);
+        tempLink.style.display = "none"; // Hide the link
+        // Append the link to the document body
+        document.body.appendChild(tempLink);
+        
+        // Intercept click event on the link
+        tempLink.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default click behavior
+            window.location.href = mailtoURL; // Manually trigger the mailto link
+        });
+        
+        // Simulate a click on the link
+        tempLink.click();
+        
+        // Remove the link from the document body
+        document.body.removeChild(tempLink);
+    }
+    </script>
+    
 </body>
 
 </html>
+
